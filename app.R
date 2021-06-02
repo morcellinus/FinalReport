@@ -67,13 +67,8 @@ ui <- fluidPage(
       
       br(),
       
-      br(),
-      
       p('아래에 있는',span('체크박스', style = 'color:purple'), '를 이용해 지도위에서 횡단보도와 초등학교 위치를 제거할 수 있습니다.'),
-      
-      br(),
-      
-      
+     
       br(),
       
       p(span('[강남구/영등포구]', style = 'color:blue'),'의 초록점은 횡단보도, 파란점은 기존에 설치된 바닥신호등, 주황색 점은 초등학교입니다.
@@ -92,7 +87,7 @@ ui <- fluidPage(
                   selected = '선택안함'
                   ),
       
-      
+      p(strong('자치구별 실제 추천 위치'),'를 아래 selector를 조작하며 확인해보세요.'),
       p('노란 동그라미는 추천된 바닥신호등 위치, 연두색 동그라미는 추천된 옐로카펫의 위치입니다.'),
       
       selectInput('GN_signs_section',
@@ -128,7 +123,7 @@ ui <- fluidPage(
                   selected = '선택안함'
                   ),
       
-      p(strong(span('[추천 후 강남구/영등포구]', style = 'color:blue')),'에서 각 옵션을 선택하여',strong('c추천 입지가 반영된 지역'),'을 지도상에서 확인할 수 있습니다.'),
+      p(strong(span('[추천 후 강남구/영등포구]', style = 'color:blue')),'에서 각 옵션을 선택하여',strong('추천 입지가 반영된 지역'),'을 지도상에서 확인할 수 있습니다.'),
       
       selectInput('location2',
                   label = strong('추천 후 강남구/영등포구'),
