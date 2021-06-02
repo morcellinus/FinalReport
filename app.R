@@ -87,7 +87,7 @@ ui <- fluidPage(
                   selected = '선택안함'
                   ),
       
-      p(strong('자치구별 실제 추천 위치'),'를 아래 selector를 조작하며 확인해보세요.'),
+      p(strong(span('자치구별 실제 추천 위치',style = 'color:blue')),'를 아래 selector를 조작하며 확인해보세요.'),
       p('노란 동그라미는 추천된 바닥신호등 위치, 연두색 동그라미는 추천된 옐로카펫의 위치입니다.'),
       
       selectInput('GN_signs_section',
