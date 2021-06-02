@@ -128,6 +128,8 @@ ui <- fluidPage(
                   selected = '선택안함'
                   ),
       
+      p(strong(span('[추천 후 강남구/영등포구]', style = 'color:blue')),'에서 각 옵션을 선택하여',strong('c추천 입지가 반영된 지역'),'을 지도상에서 확인할 수 있습니다.'),
+      
       selectInput('location2',
                   label = strong('추천 후 강남구/영등포구'),
                   choices = c('선택안함',
